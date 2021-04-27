@@ -1,6 +1,5 @@
 FROM jrei/systemd-debian  
-RUN hwclock --hctosys &&\
-    apt update && apt -y upgrade &&\
+RUN apt update && apt -y upgrade &&\
     apt install -y sudo &&\
     usermod -aG sudo root &&\
     adduser odoo &&\
