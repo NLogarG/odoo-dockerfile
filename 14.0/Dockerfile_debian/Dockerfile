@@ -14,7 +14,6 @@ RUN echo "listen_addresses='*'" >> /etc/postgresql/12/main/postgresql.conf
 RUN  /etc/init.d/postgresql start &&\
     sudo -u postgres psql --command "CREATE user odoo;" &&\
     sudo -u postgres psql --command "CREATE database odoo;"
-    # La craciรณn de usuario odoo no funciona 
 RUN exit  
 RUN apt-get -y install git &&\
     su - odoo &&\
@@ -48,4 +47,4 @@ COPY odoo.conf /home/odoo/
 COPY pg_hba.conf /etc/postgresql/12/main/
 COPY odoo.service /etc/systemd/system/
 
-EXPOSE 8069/tcp
+EXPOSE 8069 8071 8072
