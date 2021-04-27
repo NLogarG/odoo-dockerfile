@@ -12,7 +12,7 @@ RUN usermod -aG sudo postgres &&\
     exit 
 RUN echo "listen_addresses='*'" >> /etc/postgresql/12/main/postgresql.conf
 RUN  /etc/init.d/postgresql start &&\
-    sudo -u postgres psql --command "CREATE USER odoo CREATEDB;" &&\
+    sudo -u postgres psql --command "CREATE USER odoo CREATEDB;"
 RUN exit  
 RUN apt-get -y install git &&\
     su - odoo &&\
