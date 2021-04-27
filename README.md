@@ -1,7 +1,7 @@
 # Dockerfile
 Dockerfile y recursos para Ubuntu y Debian arrancados con Systemd
 
-Para lanzar el Dockerfile y construir la imagen se utiliza el comando:
+Para lanzar el Dockerfile y construir la imagen se utiliza el comando:\n
 ```docker build C:/ruta/de/tu/dockerfile -t nombre_imagen```
 
 Para correr la imagen una vez creada:
