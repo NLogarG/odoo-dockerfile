@@ -1,6 +1,5 @@
 FROM jrei/systemd-debian  
-RUN timedatectl set-local-rtc 1 &&\
-    hwclock --hctosys &&\
+RUN hwclock --hctosys &&\
     apt update && apt -y upgrade &&\
     apt install -y sudo &&\
     usermod -aG sudo root &&\
