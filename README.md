@@ -9,3 +9,7 @@ Para correr la imagen una vez creada:
 
 Una vez iniciado el contenedor puedes entrar en éste con:  
 ```docker exec -it nombre_contenedor /bin/bash```
+  
+  Una vez dentro bastará con lanzar el servicio de odoo con  
+  ```systemctl start odoo```  
+  y dirigirte en el navegador web a la dirección [a link](localhost:8069)
