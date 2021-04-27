@@ -6,7 +6,8 @@ Antes de nada hay que tener instalado Docker
 [Docker para Windows](https://docs.docker.com/docker-for-windows/install/)  
 [Docker para MacOs](https://docs.docker.com/docker-for-mac/install/)  
   
-Los siguientes comandos deberán lanzarse desde la terminal de comandos del sistema operativo utilizado
+# Instalación en Windows
+Los siguientes comandos deberán lanzarse desde la treminal de comandos del sistema
  
 Para lanzar el Dockerfile y construir la imagen se utiliza el comando:  
 ```docker build C:/ruta/de/tu/dockerfile -t nombre_imagen```  
@@ -22,3 +23,5 @@ Una vez iniciado el contenedor puedes entrar en éste con:
   Una vez dentro bastará con lanzar el servicio de odoo con  
   ```systemctl start odoo```  
   y dirigirte en el navegador web a la dirección [localhost:8069](https://localhost:8069)
+
+Instalación de Ubuntu t MacOs pendiente
