@@ -6,7 +6,8 @@ Antes de nada hay que tener instalado Docker
 [Docker para Windows](https://docs.docker.com/docker-for-windows/install/)  
 [Docker para MacOs](https://docs.docker.com/docker-for-mac/install/)  
   
-  
+Los siguientes comandos deberán lanzarse desde la terminal de comandos del sistema operativo utilizado
+ 
 Para lanzar el Dockerfile y construir la imagen se utiliza el comando:  
 ```docker build C:/ruta/de/tu/dockerfile -t nombre_imagen```
 
