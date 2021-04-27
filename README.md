@@ -10,7 +10,7 @@ Los siguientes comandos deberán lanzarse desde la terminal de comandos del sist
  
 Para lanzar el Dockerfile y construir la imagen se utiliza el comando:  
 ```docker build C:/ruta/de/tu/dockerfile -t nombre_imagen```  
- La ruta/de/tu/dockerfile deberá ser la ruta de la carpeta en la quee esta situado el archivo dockerfile
+ La ruta/de/tu/dockerfile deberá ser la ruta de la carpeta en la que esta situado el archivo dockerfile
   
 
 Para correr la imagen una vez creada:  
