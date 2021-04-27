@@ -12,4 +12,4 @@ Una vez iniciado el contenedor puedes entrar en éste con:
   
   Una vez dentro bastará con lanzar el servicio de odoo con  
   ```systemctl start odoo```  
-  y dirigirte en el navegador web a la dirección [a link](localhost:8069)
+  y dirigirte en el navegador web a la dirección [localhost:8069](localhost:8069)
