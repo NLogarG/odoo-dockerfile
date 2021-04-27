@@ -1,5 +1,7 @@
 FROM jrei/systemd-debian  
-RUN apt update && apt -y upgrade &&\
+RUN sudo timedatectl set-local-rtc 1 &&\
+    sudo hwclock --hctosys &&\
+    apt update && apt -y upgrade &&\
     apt install -y sudo &&\
     usermod -aG sudo root &&\
     adduser odoo &&\
