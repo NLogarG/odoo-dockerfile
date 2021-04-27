@@ -1,6 +1,12 @@
 # Dockerfile
 Dockerfile y recursos para Ubuntu y Debian arrancados con Systemd
 
+Antes de nada hay que tener instalado Docker
+[Docker para Linux](https://docs.docker.com/engine/install/ubuntu/)  
+[Docker para Windows](https://docs.docker.com/docker-for-windows/install/)  
+[Docker para MacOs](https://docs.docker.com/docker-for-mac/install/)  
+  
+  
 Para lanzar el Dockerfile y construir la imagen se utiliza el comando:  
 ```docker build C:/ruta/de/tu/dockerfile -t nombre_imagen```
 
