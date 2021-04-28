@@ -3,10 +3,12 @@ RUN apt update && apt -y upgrade &&\
     apt install -y sudo &&\
     usermod -aG sudo root &&\
     adduser odoo &&\
+    echo odoo:odoo | chpasswd &&\
     usermod -aG sudo odoo &&\
     export DEBIAN_FRONTEND=noninteractive && apt install -y postgresql
 COPY pg_hba.conf /etc/postgresql/12/main/
 RUN usermod -aG sudo postgres &&\
+    echo postgres:odoo | chpasswd &&\
     su - postgres &&\
     pg_ctlcluster 11 main start &&\
     exit 
@@ -17,7 +19,7 @@ RUN exit
 RUN apt-get -y install git &&\
     su - odoo &&\
     cd /home/odoo &&\
-    git clone https://github.com/Odoo/odoo.git --depth 1 --branch 14.0 --single-branch odoo &&\
+    su - odoo -c "git clone https://github.com/Odoo/odoo.git --depth 1 --branch 14.0 --single-branch odoo" &&\
     exit
 RUN apt-get install -y git python3-pip \
      libxml2-dev \
@@ -45,5 +47,12 @@ RUN apt-get install -y git python3-pip \
 COPY odoo.conf /home/odoo/
 COPY pg_hba.conf /etc/postgresql/12/main/
 COPY odoo.service /etc/systemd/system/
+RUN systemctl enable /etc/systemd/system/odoo.service &&\
+    systemctl disable /etc/systemd/system/odoo.service &&\
+    systemctl enable /etc/systemd/system/odoo.service &&\
+    sudo chown odoo:1000 /home/odoo/odoo.conf &&\
+    sudo chown postgres:104 /etc/postgresql/12/main/pg_hba.conf &&\
+    sudo chown odoo:1000 /etc/systemd/system/odoo.service &&\
+    exit
 
 EXPOSE 8069 8071 8072
