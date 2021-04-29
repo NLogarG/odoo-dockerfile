@@ -10,7 +10,7 @@ Antes de nada hay que tener instalado Docker
 Los siguientes comandos deberán lanzarse desde la treminal de comandos del sistema
  
 Para lanzar el Dockerfile y construir la imagen se utiliza el comando:  
-```powershell
+```cmd
 docker build C:/ruta/de/tu/dockerfile -t nombre_imagen
 ```  
  La ruta/de/tu/dockerfile deberá ser la ruta de la carpeta en la que esta situado el archivo dockerfile
