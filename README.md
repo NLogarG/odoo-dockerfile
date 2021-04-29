@@ -35,4 +35,5 @@ docker exec -it nombre_contenedor /bin/bash
     
 Lorem ipsum dolor sit amet.
 
-[button url="http://www.google.com"]
+[Click me](http://www.google.com){: .btn}
+
