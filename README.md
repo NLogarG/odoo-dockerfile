@@ -1,5 +1,5 @@
 # Dockerfile
-Dockerfile y recursos para Ubuntu y Debian arrancados con Systemd
+Dockerfile y recursos para Debian arrancado con Systemd
 
 Antes de nada hay que tener instalado Docker  
 [Docker para Linux](https://docs.docker.com/engine/install/ubuntu/)  
