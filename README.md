@@ -23,7 +23,7 @@ docker run -d --name nombre_contenedor -p 8069:8069 -p 8071:8071 -p 8072:8072 --
 
 Una vez iniciado el contenedor puedes entrar en éste con:  
 ```cmd
-docker exec -it nombre_contenedor /bin/bash
+docker exec -it --user odoo nombre_contenedor /bin/bash
 ```
   
   Una vez dentro bastará con lanzar el servicio de odoo con  
