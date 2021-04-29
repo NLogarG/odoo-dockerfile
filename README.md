@@ -6,7 +6,7 @@ Antes de nada hay que tener instalado Docker
 [Docker para Windows](https://docs.docker.com/docker-for-windows/install/)  
 [Docker para MacOs](https://docs.docker.com/docker-for-mac/install/)  
   
-# Instalación en Windows
+# Instalación 
 Los siguientes comandos deberán lanzarse desde la treminal de comandos del sistema
  
 Para lanzar el Dockerfile y construir la imagen se utiliza el comando:  
@@ -25,5 +25,3 @@ Una vez iniciado el contenedor puedes entrar en éste con:
   y dirigirte en el navegador web a la dirección [localhost:8069](http://localhost:8069/)
   
     
-    
-Instalación de Ubuntu y MacOs pendiente
