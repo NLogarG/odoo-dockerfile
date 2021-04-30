@@ -33,13 +33,11 @@ docker exec -it --user odoo nombre_contenedor /bin/bash
   ```bash
   systemctl start odoo
   ```  
-  y dirigirte en el navegador web a la dirección [localhost:8069](http://localhost:8069/)
+  y dirigirte en el navegador web a la dirección [localhost:8069](http://localhost:8069/)  
   
-  
-    
-    
 
-# Odoo Dockerfile
+  
+  # Odoo Dockerfile
 
 Dockerfile and resources for Debian booted with Systemd
 
