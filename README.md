@@ -35,7 +35,9 @@ docker exec -it --user odoo nombre_contenedor /bin/bash
   ```  
   y dirigirte en el navegador web a la dirección [localhost:8069](http://localhost:8069/)
   
-
+  
+    
+    
 
 # Odoo Dockerfile
 
