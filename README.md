@@ -53,7 +53,7 @@ To launch the Dockerfile and build the image, use the command:
 ```cmd
 docker build C:/path/to/your/dockerfile -t image_name
 ```
- The path / of / your / dockerfile should be the path of the folder where the dockerfile file is located
+ The path /to/your/dockerfile should be the path of the folder where the dockerfile file is located
   
 
 To run the image once it is created:
