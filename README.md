@@ -47,8 +47,8 @@ First of all you have to have Docker installed
 [Docker for MacOs](https://docs.docker.com/docker-for-mac/install/)
   
 # Installation
-The following commands must be launched from the system command terminal
- 
+The following commands must be launched from the system command terminal  
+  
 To launch the Dockerfile and build the image, use the command:
 ```cmd
 docker build C:/path/to/your/dockerfile -t image_name
