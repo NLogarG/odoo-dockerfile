@@ -1,4 +1,7 @@
-# Dockerfile
+# Dockerfile para Odoo
+
+[English version](https://github.com/Erojase/odoo-dockerfile/edit/main/README.md#L40)
+
 Dockerfile y recursos para Debian arrancado con Systemd
 
 Antes de nada hay que tener instalado Docker  
@@ -33,3 +36,5 @@ docker exec -it --user odoo nombre_contenedor /bin/bash
   y dirigirte en el navegador web a la dirección [localhost:8069](http://localhost:8069/)
   
 
+
+# Odoo Dckerfile
