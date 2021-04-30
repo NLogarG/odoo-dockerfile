@@ -37,4 +37,4 @@ docker exec -it --user odoo nombre_contenedor /bin/bash
   
 
 
-# Odoo Dckerfile
+# Odoo Dockerfile
