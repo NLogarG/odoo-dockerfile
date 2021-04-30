@@ -41,9 +41,9 @@ docker exec -it --user odoo nombre_contenedor /bin/bash
 
 Dockerfile and resources for Debian booted with Systemd
 
-First of all you have to have Docker installed
-[Docker for Linux](https://docs.docker.com/engine/install/ubuntu/)
-[Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
+First of all you have to have Docker installed  
+[Docker for Linux](https://docs.docker.com/engine/install/ubuntu/)  
+[Docker for Windows](https://docs.docker.com/docker-for-windows/install/)  
 [Docker for MacOs](https://docs.docker.com/docker-for-mac/install/)
   
 # Installation
