@@ -51,14 +51,20 @@ RUN apt-get install -y git python3-pip \
     su odoo &&\
     cp /home/odoo/odoo/debian/odoo.conf /home/odoo/
 
-
+    #Import odoo configuration file
 COPY odoo.conf /home/odoo/
+
+    #Import Postgres configuration file
 COPY pg_hba.conf /etc/postgresql/12/main/
+
+    #Import odoo service file
 COPY odoo.service /etc/systemd/system/
    
-    #Enable Odoo service on Boot and changanging owner of some files
-RUN systemctl enable /etc/systemd/system/odoo.service &&\
-    sudo chown odoo:1000 /home/odoo/odoo.conf &&\
+    #Enable Odoo service on Boot 
+#RUN systemctl enable /etc/systemd/system/odoo.service
+
+    #Changanging owner of some files
+RUN sudo chown odoo:1000 /home/odoo/odoo.conf &&\
     sudo chown postgres:104 /etc/postgresql/12/main/pg_hba.conf &&\
     sudo chown odoo:1000 /etc/systemd/system/odoo.service &&\
     exit
