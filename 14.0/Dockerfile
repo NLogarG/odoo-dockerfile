@@ -25,7 +25,7 @@ RUN  /etc/init.d/postgresql start &&\
 RUN apt-get -y install git &&\
     su - odoo &&\
     cd /home/odoo &&\
-    su - odoo -c "git clone https://github.com/Odoo/odoo.git --depth 1 --branch 14.0 --single-branch odoo" &&\
+    su - odoo -c "git clone https://github.com/Odoo/odoo.git --depth 1 --branch 13.0 --single-branch odoo" &&\
     exit
 
     # Install some dependencies and wkhtmltopdf
