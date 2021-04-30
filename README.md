@@ -1,6 +1,6 @@
 # Dockerfile para Odoo
 
-[English version](https://github.com/Erojase/odoo-dockerfile/blob/main/README.md#L40)
+[English version](https://github.com/Erojase/odoo-dockerfile/blob/main/README.md#odoo-dockerfile)
 
 Dockerfile y recursos para Debian arrancado con Systemd
 
