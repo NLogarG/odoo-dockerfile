@@ -70,4 +70,7 @@ RUN sudo chown odoo:1000 /home/odoo/odoo.conf &&\
     exit
 
 EXPOSE 8069 8071 8072
-# USER odoo
+
+#Default user when start
+USER odoo
+CMD ["/bin/bash"]
